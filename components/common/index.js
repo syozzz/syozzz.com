@@ -26,3 +26,18 @@ export const PageSubTitle = styled.div`
     margin-top: 25px;
   }
 `
+
+export const ContentBox = styled.div`
+  margin-top: 50px;
+  font-size: 12px;
+  letter-spacing: 0.2em;
+  line-height: 2.33333;
+  
+  @media (min-width: 769px) {
+    line-height: 2.66667;
+  }
+`
+
+export const Extra = styled.div`
+  height: 40px;
+`

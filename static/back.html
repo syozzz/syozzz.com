@@ -305,14 +305,13 @@
                 }
             };
             $(function(){
-                let timeout;
                 RENDERER.init(STRATEGY);
-                window.addEventListener('resize',  function (e) {
+                /*window.addEventListener('resize',  function (e) {
                     clearTimeout(timeout)
                     timeout = setTimeout(() => {
                         window.location.reload();
                     }, 300)
-                });
+                });*/
             });
         </script>
     </body>

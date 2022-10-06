@@ -16,6 +16,8 @@ const getMinNum = () => {
     ) / 2;
 }
 
+let timeout;
+
 export default function SwitchTheme({ themeType, switchThemes }) {
 
     const [showMaskAnimation, setShowMaskAnimation] = useState(false)
@@ -30,6 +32,12 @@ export default function SwitchTheme({ themeType, switchThemes }) {
 
     useEffect(() => {
         setSrc(iframeSrc)
+        window.addEventListener('resize',  function (e) {
+            clearTimeout(timeout)
+            timeout = setTimeout(() => {
+                iframeRef?.current?.contentWindow.location.reload()
+            }, 300)
+        })
     }, [])
 
     return (
