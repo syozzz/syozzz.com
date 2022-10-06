@@ -24,3 +24,8 @@ a {
     background: black;
   }
 }
+
+@font-face {
+  font-family: lightAgen;
+  src: url("/static/OPTIDiannaScript-LightAgen.otf");
+}
